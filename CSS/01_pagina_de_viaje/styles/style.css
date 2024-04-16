@@ -65,7 +65,7 @@ body { /* Selección de body */
     }
     .destionos-container{
         display: flex;
-        
+
     }
     .destino{
         width: calc(33.33% - 20px); /*Establede el ancho de cada destiono menos el espacio de entre los destinos*/
@@ -77,10 +77,10 @@ body { /* Selección de body */
         border-radius: 8px;/* Agrega esquinas redondeadas */
     }
     .destino h3{
-        marigin-top: 10px;/*Agrega distancia superior entre imagen y h3*/
+        margin-top: 10px;/*Agrega distancia superior entre imagen y h3*/
     }
     .destino p{
-        marigin-top: 10px;/*Agrega distancia superior entre h3 y p*/
+        margin-top: 10px;/*Agrega distancia superior entre h3 y p*/
     }
     footer{
         background-color: #333; /* Establece color fondo de footer */
