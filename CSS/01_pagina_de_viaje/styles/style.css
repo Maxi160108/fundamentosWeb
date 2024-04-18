@@ -39,7 +39,7 @@ body { /* Selección de body */
     }
     
     #banner{
-        background-image: url('https://blog.nmviajes.com/wp-content/uploads/2023/12/shutterstock_81261067-1500x500.jpg');/*Establece la imagen de fondo del banner*/
+        background-image: url('https://via.placeholder.com/1500x500');/*Establece la imagen de fondo del banner*/
         background-size: cover; /* Ajusta la imagen al área del banner */
         color: #fff; /* Establece color del texto */
         text-align: center; /* Centra el texto del banner*/
@@ -63,28 +63,63 @@ body { /* Selección de body */
     .btn:hover {
         background-color: #0056b3; /* Establece color de fondo en hover boton */
     }
-    .destionos-container{
-        display: flex;
-
+    
+    .destinos-container{
+        display: flex; /* Utiliza flexbox para alinear elementos */
+        justify-content: space-between; /* Distribuye uniformemenente los elementos */
+        flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
     }
     .destino{
-        width: calc(33.33% - 20px); /*Establede el ancho de cada destiono menos el espacio de entre los destinos*/
-        margin-bottom: 20px;/*define el margen inferior*/
-        text-align: center;/*centra el texto*/
+        width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+        margin-bottom: 20px; /* Define el margen inferior*/
+        text-align: center; /* Centra el texto */
     }
+    
     .destino img{
-        width: 100%;/*Establece el ancho de la imagen ajustandola al elemento*/
-        border-radius: 8px;/* Agrega esquinas redondeadas */
+        width: 100%; /* Establece el ancho de la imagen ajustandola al elemento que la contiene */
+        border-radius: 8px; /* Agrega esquinas redondeadas */
     }
     .destino h3{
-        margin-top: 10px;/*Agrega distancia superior entre imagen y h3*/
+        margin-top:10px; /* Agrega distancia entre imagen y h3 */
     }
     .destino p{
-        margin-top: 10px;/*Agrega distancia superior entre h3 y p*/
+        margin-top:10px; /* Agrega distancia superior entre h3 y p */
     }
+    
     footer{
         background-color: #333; /* Establece color fondo de footer */
         color: #fff; /* Establece color de texto de footer */
         text-align: center; /* Centra el texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
     }
+        
+/* Aqui va elestilo del formulario de conctato */
+
+#conctato{
+    padding:40px 0;
+}
+
+#contacto.container{
+    text-align: center;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+}
+#contacto form{
+    max-width: 500px; /* Establece el ancho maximo de los elementos */
+    margin: 0 auto; /* Centra horizontalmente dentro del contenedor */
+    padding:20px;
+    background-color: rgb(39, 126, 184);
+    border-radius: 8px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 1); /* Establece una sombra alredor del formulario */
+}
+#contacto input, #contacto textarea{
+    margin-bottom: 10px;
+    front-weight: bold; /* Establece fuente en negrito */
+}
+#contacto input, #contacto textarea{
+
+    resize: vertical; /* Permite redimencionar el area del texto para verticalmente */
+
+}
