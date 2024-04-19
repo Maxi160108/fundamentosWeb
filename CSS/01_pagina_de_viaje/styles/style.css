@@ -39,11 +39,11 @@ body { /* Selección de body */
     }
     
     #banner{
-        background-image: url('https://via.placeholder.com/1500x500');/*Establece la imagen de fondo del banner*/
+        background-image: url('https://www.sernatur.cl/wp-content/uploads/2019/11/1500x500.jpg');/*Establece la imagen de fondo del banner*/
         background-size: cover; /* Ajusta la imagen al área del banner */
         color: #fff; /* Establece color del texto */
         text-align: center; /* Centra el texto del banner*/
-        padding: 100px 0; /* Define relleno superior e inferior */
+        padding: 200px 0; /* Define relleno superior e inferior */
     }
     #banner h2{
         font-size: 36px; /* Establece tamaño de h2 */
@@ -100,6 +100,35 @@ body { /* Selección de body */
 }
 
 #contacto.container{
+    text-align: center;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+}
+#contacto form{
+    max-width: 500px; /* Establece el ancho maximo de los elementos */
+    margin: 0 auto; /* Centra horizontalmente dentro del contenedor */
+    padding:20px;
+    background-color: rgb(39, 126, 184);
+    border-radius: 8px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 1); /* Establece una sombra alredor del formulario */
+}
+#contacto input, #contacto textarea{
+    margin-bottom: 10px;
+    front-weight: bold; /* Establece fuente en negrito */
+}
+#contacto input, #contacto textarea{
+
+    resize: vertical; /* Permite redimencionar el area del texto para verticalmente */
+
+}
+
+#paquete{
+    padding:40px 0;
+}
+
+#paquete.container{
     text-align: center;
 }
 
