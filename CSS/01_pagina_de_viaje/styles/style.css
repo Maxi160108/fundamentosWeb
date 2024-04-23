@@ -3,10 +3,13 @@
     outline: solid rgb(255, 255, 255);
 }
 */
+
+
 body { /* Selección de body */
     font-family:Arial, sans-serif ; /* Cambia tipografia */
     margin: 0; /* Elimina todo el margen predefinido */
     padding: 0; /* Elimina todo el relleno de los elementos */
+    background-color: rgb(62, 104, 62);
     }
     /* Acá viene el estilo de una clase container */
     .container {
@@ -15,7 +18,7 @@ body { /* Selección de body */
     }
     /* Estilo de encabezado */
     header {
-        background-color: #333; /* Establece el color de fondo */
+        background-color: #0a3306; /* Establece el color de fondo */
         color: #fff; /* Establece el color del texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
     }
@@ -30,7 +33,7 @@ body { /* Selección de body */
     }
     /* Estilo a elementos de vinculo ancla de navegacion */
     nav ul li a{
-        color:#fff; /* Color a elemento Anchor */
+        color:#ffffff; /* Color a elemento Anchor */
         text-decoration: none; /* Quita subrayado de enlaces */
     }
     
@@ -39,7 +42,7 @@ body { /* Selección de body */
     }
     
     #banner{
-        background-image: url('https://www.sernatur.cl/wp-content/uploads/2019/11/1500x500.jpg');/*Establece la imagen de fondo del banner*/
+        background-image: url('https://estucasa.catalunya.com/wp-content/uploads/2022/05/Catalunya-08-2-1_1500x500.jpg');/*Establece la imagen de fondo del banner*/
         background-size: cover; /* Ajusta la imagen al área del banner */
         color: #fff; /* Establece color del texto */
         text-align: center; /* Centra el texto del banner*/
@@ -73,6 +76,11 @@ body { /* Selección de body */
         width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
         margin-bottom: 20px; /* Define el margen inferior*/
         text-align: center; /* Centra el texto */
+        transition: 1s;
+    }
+    .destino:hover{
+        height: 600px;
+        width: 500px;
     }
     
     .destino img{
@@ -87,7 +95,7 @@ body { /* Selección de body */
     }
     
     footer{
-        background-color: #333; /* Establece color fondo de footer */
+        background-color: #377016; /* Establece color fondo de footer */
         color: #fff; /* Establece color de texto de footer */
         text-align: center; /* Centra el texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
@@ -110,7 +118,7 @@ body { /* Selección de body */
     max-width: 500px; /* Establece el ancho maximo de los elementos */
     margin: 0 auto; /* Centra horizontalmente dentro del contenedor */
     padding:20px;
-    background-color: rgb(39, 126, 184);
+    background-color: rgb(81, 99, 3);
     border-radius: 8px;
     box-shadow: 0 0 10px  rgba(0, 0, 0, 1); /* Establece una sombra alredor del formulario */
 }
@@ -123,3 +131,4 @@ body { /* Selección de body */
     resize: vertical; /* Permite redimencionar el area del texto para verticalmente */
 
 }
+
