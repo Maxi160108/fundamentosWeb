@@ -76,11 +76,11 @@ body { /* Selección de body */
         width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
         margin-bottom: 20px; /* Define el margen inferior*/
         text-align: center; /* Centra el texto */
-        transition: 1s;
+        transition: 1s; /*Indica cuanto dura la transcicion*/
     }
-    .destino:hover{
-        height: 600px;
-        width: 500px;
+    .destino:hover{/*Esto hara la haya una transcicion cuando el puntero este encima de una imagen*/
+        height: 500px;/*Esto indica cuanto se se agrandara su altura*/
+        width: 500px;/*Esto indica cuanto se se agrandara su anchura*/
     }
     
     .destino img{
@@ -124,7 +124,7 @@ body { /* Selección de body */
 }
 #contacto input, #contacto textarea{
     margin-bottom: 10px;
-    front-weight: bold; /* Establece fuente en negrito */
+    font-weight: bold; /* Establece fuente en negrito */
 }
 #contacto input, #contacto textarea{
 
@@ -132,3 +132,66 @@ body { /* Selección de body */
 
 }
 
+hr {
+    border-color: rgb(0, 0, 0);
+    margin: 30px;
+  }
+/*carta*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.card {
+    width: 450px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    color: #0F0D0D;
+    transition: transform 0.4s ease;
+}
+.card:hover {
+    transform: translateY(-3%);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content {
+    padding-inline: 20px;
+}
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: -8px;
+}
+.card-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 6px;
+    color: #0F0D0D;
+}
+.card-content .country-list {
+    color: gray;
+}
+.card-content ul {
+    font-size: 18px;
+    margin-top: -8px;
+}
+.card-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #0F0D0D;
+    color: beige;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 2px solid;
+}
+.card-button:hover {
+    background-color: beige;
+    color: #0F0D0D;
+}
